@@ -1,0 +1,192 @@
+// Own settings
+
+// $button_padding: 7px 15px;
+// $button_bg_color: transparent;
+// $button_text_color:#fff;
+// $button_hover_bg_color: white;
+// $button_hover_text_color: $color3;
+// $button_border_radius: 3px;
+// $button_border_width: 3px;
+// $button_font: $font2;
+// $button_font_size: 14px;
+// $button_font_weight: 500;
+// $button_line_height: 100%;
+// $color1: red;
+// $color2: green;
+// $color3: blue;
+// $color4: #ccc;
+//
+// $base_text_color: #444;
+// $body-color: #fff;
+//
+// $link_color: $color1;
+// $link_hover_color: $color1;
+//
+// $h1_color: $color1;
+// $h2_color: $color1;
+// $h3_color: $color1;
+// $h4_color: $color1;
+// $h5_color: $color1;
+// $h6_color: $color1;
+//
+// //===============================================================================
+// //predefined classes
+// //-------------------------------------------------------------------------------
+//
+// .color-1 {color:$color1 !important;}
+// .color-2 {color:$color2 !important;}
+// .color-3 {color:$color3 !important;}
+// .color-4 {color:$color4 !important;}
+//
+// .bg-color-1 {background-color:$color1 !important;}
+// .bg-color-2 {background-color:$color2 !important;}
+// .bg-color-3 {background-color:$color3 !important;}
+// .bg-color-4 {background-color:$color4 !important;}
+// @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+//
+// $font1: 'Roboto', sans-serif;
+// $font2: 'Roboto', sans-serif;
+// $font3: $font2;
+// $font4: $font2;
+//
+// //basic setup
+// $base_font_size: 16px;
+// $base_line_height: 20px;
+// $base_font:$font2;
+// $base_font_weight: 300;
+//
+// //basic link
+// $link_decoration: underline;
+//
+// $paragraph_margin_mobile: 10px 0 20px 0;
+// $paragraph_margin_tablet: 10px 0 20px 0;
+// $paragraph_margin_desktop: 10px 0 20px 0;
+//
+// //===============================================================================
+// //  HEADINGS
+// //-------------------------------------------------------------------------------
+//
+// //heading 1 settings
+// //-------------------------------------------------------------------------------
+// $h1_font: $font2;
+// $h1_line_height: 100%;
+// $h1_font_weight: 400;
+//
+// $h1_margin_desktop: 20px 0;
+// $h1_margin_tablet: 15px 0;
+// $h1_margin_mobile: 10px 0;
+//
+// $h1_font_size_desktop: 55px;
+// $h1_font_size_tablet: 45px;
+// $h1_font-size_mobile: 30px;
+//
+// //heading 2 settings
+// //-------------------------------------------------------------------------------
+// $h2_font: $font2;
+// $h2_line_height: 37px;
+// $h2_font_weight: 300;
+//
+// $h2_margin_desktop: 20px 0;
+// $h2_margin_tablet: 15px 0;
+// $h2_margin_mobile: 10px 0;
+//
+// $h2_font_size_desktop: 35px;
+// $h2_font_size_tablet: 28px;
+// $h2_font-size_mobile: 20px;
+//
+// //heading 3 settings
+// //-------------------------------------------------------------------------------
+// $h3_font: $font2;
+// $h3_line_height: 110%;
+// $h3_font_weight: 600;
+//
+// $h3_margin_desktop: 20px 0;
+// $h3_margin_tablet: 15px 0;
+// $h3_margin_mobile: 10px 0;
+//
+// $h3_font_size_desktop: 25px;
+// $h3_font_size_tablet: 20px;
+// $h3_font-size_mobile: 18px;
+//
+// //heading 4 settings
+// //-------------------------------------------------------------------------------
+// $h4_font: $font2;
+// $h4_line_height: 140%;
+// $h4_font_weight: 300;
+//
+// $h4_margin_desktop: 20px 0 0 0;
+// $h4_margin_tablet: 15px 0 0 0;
+// $h4_margin_mobile: 10px 0 0 0;
+//
+// $h4_font_size_desktop: 18px;
+// $h4_font_size_tablet: 17px;
+// $h4_font-size_mobile: 16px;
+//
+// //heading 5 settings
+// //-------------------------------------------------------------------------------
+// $h5_font: $font2;
+// $h5_line_height: 110%;
+// $h5_font_weight: 700;
+//
+// $h5_margin_desktop: 20px 0 0 0;
+// $h5_margin_tablet: 15px 0 0 0;
+// $h5_margin_mobile: 10px 0 0 0;
+//
+// $h5_font_size_desktop: 16px;
+// $h5_font_size_tablet: 15px;
+// $h5_font-size_mobile: 14px;
+//
+// //heading 6 settings
+// //-------------------------------------------------------------------------------
+// $h6_font: $font2;
+// $h6_line_height: 110%;
+// $h6_font_weight: 700;
+//
+// $h6_margin_desktop: 20px 0 0 0;
+// $h6_margin_tablet: 15px 0 0 0;
+// $h6_margin_mobile: 10px 0 0 0;
+//
+// $h6_font_size_desktop: 14px;
+// $h6_font_size_tablet: 13px;
+// $h6_font-size_mobile: 12px;
+// $input_padding: 10px 25px;
+// $input_border_radius: 5px;
+// $placeholder_color: #999;
+// $input_text_color: $base_text_color;
+// $max-page-width: 1115px;
+//
+// //Mobile
+// $mobile-width: 0px;
+//
+// //Tablet
+// $tablet-width: 768px;
+// $tablet-landscape-width: 1020px;
+//
+// //Desktop
+// $desktop-width: 1280px;
+// $bigscreen-width: 1500px;
+//
+// // mixins
+// @mixin mobile {
+// 	@media (max-width:$tablet-width){
+// 		@content;
+// 	}
+// }
+//
+// @mixin tablet {
+// 	@media (min-width:$tablet-width) {
+// 		@content;
+// 	}
+// }
+//
+// @mixin desktop {
+// 	@media (min-width: $desktop-width) {
+// 		@content;
+// 	}
+// }
+//
+// @mixin bigscreen {
+// 	@media (min-width: $bigscreen-width){
+// 		@content;
+// 	}
+// }
