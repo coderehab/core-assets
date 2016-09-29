@@ -1,0 +1,45 @@
+@mixin submenu-dropdown($selector:".sub-menu"){
+
+	#{$selector} {
+		margin-top:10px;
+		visibility:hidden;
+		opacity:0;
+		width:300px;
+		position: absolute;
+		z-index: 99;
+		background: #fff;
+		@include single-transition(all, 0.3s);
+		border: 1px solid #dfdfdf;
+
+		li{
+			position: relative;
+			display: block;
+			width: 100%;
+			margin: 0 !important;
+			border-top: 1px solid #dfdfdf;
+
+			a{
+				display: block;
+				padding: 12px 20px;
+				width: 100%;
+				box-sizing: border-box;
+				line-height: 150%;
+			}
+
+			&:first-child{
+				border-top:0;
+			}
+		}
+
+		ul{
+			left:100%;
+			top:-1px;
+			margin:0;
+		}
+
+		&.visible{
+			visibility:visible;
+			opacity:1;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+$max-page-width: 1115px;
+
+//Mobile
+$mobile-width: 0px;
+
+//Tablet
+$tablet-width: 768px;
+$tablet-landscape-width: 1020px;
+
+//Desktop
+$desktop-width: 1280px;
+$bigscreen-width: 1500px;
+
+// mixins
+@mixin mobile {
+	@media (max-width:$tablet-width){
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width:$tablet-width) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: $desktop-width) {
+		@content;
+	}
+}
+
+@mixin bigscreen {
+	@media (min-width: $bigscreen-width){
+		@content;
+	}
+}

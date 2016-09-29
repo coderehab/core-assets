@@ -1,0 +1,34 @@
+@mixin mobile-menu-slideIn($position: left){
+  background:$color1;
+  z-index: 999;
+  position: fixed;
+  left:0;
+  top:0;
+  width:90%;
+  height:100%;
+  max-width: 300px;
+  @include translateX(-100%);
+  @include single-transition(all, 0.3s);
+  box-sizing: border-box;
+  padding:5%;
+  overflow: auto;
+
+  li, .menu-item {
+    padding:2.5% 5%;
+    width:100%;
+    box-sizing: border-box;
+    text-align: left;
+    margin:0 !important;
+    a{
+      color:$color2;
+    }
+  }
+
+  header#main li a:hover, header#main .current_page_item a, header#main li.active a{
+    color:lighten($color2, 10%);
+  }
+
+  &.visible {
+    @include translateX(0%);
+  }
+}

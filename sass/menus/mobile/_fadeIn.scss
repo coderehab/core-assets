@@ -1,0 +1,41 @@
+@mixin mobile-menu-fadeIn(){
+
+	background:#222;
+	z-index: 999;
+
+	position: fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:#222;
+	@include single-transition(all, 0.3s);
+	visibility: hidden;
+	opacity: 0;
+	box-sizing: border-box;
+	padding-top:60px;
+
+	li, .menu-item {
+		padding:2.5% 5%;
+		width:100%;
+		box-sizing: border-box;
+		text-align: center;
+		margin:0 !important;
+		a{
+			color:#999;
+		}
+	}
+
+	li a:hover, .current_page_item a, li.active a{
+		color:#fff;
+	}
+
+	&.visible {
+		visibility: visible;
+		opacity: 1;
+		.close{
+			display: block;
+		}
+	}
+
+}

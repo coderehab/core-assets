@@ -1,0 +1,14 @@
+@mixin basic-menu($direction:horizontal){
+
+	margin:0;
+	padding:0;
+	list-style: none;
+
+	@if $direction == horizontal {
+		li, .menu-item{
+			float:right;
+			display: inline-block;
+			margin: 0 5px;
+		}
+	}
+}

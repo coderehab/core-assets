@@ -1,0 +1,11 @@
+@mixin hideElement($type) {
+  @if $type == "hidden"{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  @if $type == "visible"{
+    opacity: 1;
+    visibility: visible;
+  }
+}

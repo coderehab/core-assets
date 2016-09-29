@@ -1,0 +1,216 @@
+//===============================================================================
+// Can't touch this! tum ta ta tum ta tum ta tum
+//-------------------------------------------------------------------------------
+
+html, body {
+  background-color: $body-color;
+  font-family: $base_font;
+  font-size: $base_font_size;
+  font-weight: $base_font_weight;
+  color: $base_text_color;
+  line-height: $base_line_height;
+  margin: 0;
+  padding: 0;
+
+  *{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  input, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
+hr {
+  margin-top:15px 0;
+  clear:both;
+  height:1px;
+  border:0;
+  background-color:#e4e4e4;
+}
+
+a {
+  //    text-decoration:underline;
+  color:$link_color;
+  text-decoration:none;
+  &:after{
+    content: "";
+    border-bottom: 1px solid $color1;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  &:hover {
+    text-decoration:none;
+    color:$link_hover_color;
+  }
+}
+
+img {
+  max-width: 100%;
+  height:auto;
+  &.alignleft{
+    float:left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  &.alignright{
+    float:right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.pagewrap {
+  // @include pie-clearfix();
+  // @include box-sizing();
+  box-sizing: border-box;
+  width:100%;
+  max-width: $max-page-width;
+  margin:auto;
+}
+
+nav ul, .menu ul{
+  margin:0;
+  padding:0;
+  list-style: none;
+  li{
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+
+h1 {font-size: 2em; color: $h1_color; font-family:$h1_font; font-weight:$h1_font_weight; margin:$h1_margin_mobile; line-height: $h1_line_height; a{color: $h1_color;} }
+h2 {color: $h2_color; font-family:$h2_font; font-weight:$h2_font_weight; margin:$h2_margin_mobile; line-height: $h2_line_height; a{color: $h2_color;} }
+h3 {color: $h3_color; font-family:$h3_font; font-weight:$h3_font_weight; margin:$h3_margin_mobile; line-height: $h3_line_height; a{color: $h3_color;} }
+h4 {color: $h4_color; font-family:$h4_font; font-weight:$h4_font_weight; margin:$h4_margin_mobile; line-height: $h4_line_height; a{color: $h4_color;} }
+h5 {color: $h5_color; font-family:$h5_font; font-weight:$h5_font_weight; margin:$h5_margin_mobile; line-height: $h5_line_height; a{color: $h5_color;} }
+h6 {color: $h6_color; font-family:$h6_font; font-weight:$h6_font_weight; margin:$h6_margin_mobile; line-height: $h6_line_height; a{color: $h6_color;} }
+
+form {
+  margin:0;
+  input, textarea, select {
+    border:1px solid #ccc;
+    width:100%;
+    box-sizing: border-box;
+    padding: $input_padding;
+    margin:5px 0;
+    color: $input_text_color;
+
+    // @include border-radius($input_border_radius);
+    // @include box-sizing();
+    box-sizing: border-box;
+    // @include input-placeholder {
+    //   color:$placeholder_color;
+    // }
+  }
+
+  input[type=checkbox] {
+    width:auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  label {
+    margin:0;
+    padding: 5px 0;
+    display: inline-block;
+    clear: both;
+    vertical-align: middle;
+  }
+
+  textarea {
+    height:100px;
+    // @include input-placeholder {
+    //   color: #999;
+    // }
+  }
+
+  .error {
+    span {display: block; padding: 5px; color: #ff0000;}
+    input, select, textarea{
+      border-color:#ff0000;
+    }
+  }
+
+//  @include pie-clearfix();
+}
+
+.button, button, input[type="submit"], .btn {
+  display: inline-block;
+  position:relative;
+  background: $button_bg_color;
+  padding:$button_padding;
+  min-width:auto;
+  color:$button_text_color;
+  font-weight:$button_font_weight;
+  font-size: $button_font_size;
+  font-family: $button_font;
+  border:$button_border_width solid white;
+  // @include single-transition(all, 0.2s);
+  // @include border-radius($button_border_radius);
+  cursor: pointer;
+  outline: 0;
+  text-align: center;
+  text-decoration:none;
+	line-height: $button_line_height;
+
+  &:hover{
+    background: $button_hover_bg_color;
+    border-color: darken($button_hover_bg_color, 5%);
+    color:$button_hover_text_color;
+    a{
+      color: $button_hover_text_color;
+    }
+  }
+
+  a {
+    position: relative;
+    display:inline-block;
+    margin:-15px -30px;
+    padding:15px 30px;
+    color:#fff;
+    text-decoration:none;
+    // @include single-transition(all, 0.2s);
+    img{
+      vertical-align: middle;
+    }
+  }
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    border:none;
+  }
+
+
+
+  &.full-width {
+    display:block;
+    width:100%;
+    box-sizing: border-box;
+  }
+
+  &.medium {
+    display:inline-block;
+    min-width:0;
+    padding:5px 12px;
+    margin:5px 10px;
+    border:2px solid #fff;
+  }
+
+  &.bg-color-1:hover {
+    background: $color1 !important;
+  }
+
+  &.bg-color-3:hover {
+    background: $color3 !important;
+  }
+}
+
+//===============================================================================
+// Still can't touch this! tum ta ta tum ta tum ta tum
+//-------------------------------------------------------------------------------

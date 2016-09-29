@@ -1,0 +1,31 @@
+$color1: red;
+$color2: green;
+$color3: blue;
+$color4: #ccc;
+
+$base_text_color: #444;
+$body-color: #fff;
+
+$link_color: $color1;
+$link_hover_color: $color1;
+
+$h1_color: $color1;
+$h2_color: $color1;
+$h3_color: $color1;
+$h4_color: $color1;
+$h5_color: $color1;
+$h6_color: $color1;
+
+//===============================================================================
+//predefined classes
+//-------------------------------------------------------------------------------
+
+.color-1 {color:$color1 !important;}
+.color-2 {color:$color2 !important;}
+.color-3 {color:$color3 !important;}
+.color-4 {color:$color4 !important;}
+
+.bg-color-1 {background-color:$color1 !important;}
+.bg-color-2 {background-color:$color2 !important;}
+.bg-color-3 {background-color:$color3 !important;}
+.bg-color-4 {background-color:$color4 !important;}

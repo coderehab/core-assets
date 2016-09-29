@@ -1,0 +1,11 @@
+// mixins
+@mixin desktop {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+}
+}
+
+// include
+@include desktop {
+
+}

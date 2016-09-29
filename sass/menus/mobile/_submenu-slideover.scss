@@ -1,0 +1,37 @@
+@mixin mobile-submenu-slideOver($selector:".sub-menu"){
+
+  #{$selector} {
+    position: fixed;
+    left:0;
+    right:20px;
+    top:0;
+    bottom:0;
+    padding:30px;
+    background: $color2;
+    @include translateX(-100%);
+    @include single-transition(all, 0.3s);
+    overflow: auto;
+
+    .sub-menu{display: none;}
+
+    li{
+      padding:0;
+      .description{
+        display: none;
+      }
+    }
+
+    a{
+      color:$color1;
+      padding:7px 0;
+      display: block;
+    }
+
+    &.visible{
+      @include translateX(0%);
+    }
+  }
+
+}
+
+

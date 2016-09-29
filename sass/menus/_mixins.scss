@@ -1,0 +1,79 @@
+@import "desktop/basic-menu";
+
+@import "desktop/submenu-dropdown";
+@import "desktop/submenu-widefat";
+
+@import "mobile/fadeIn";
+@import "mobile/slideIn";
+
+@import "mobile/submenu-slideover";
+
+@mixin wp-core-menu ($selector: "header nav", $type:basic, $submenu-type:dropdown, $type-mobile:slideIn, $mobile-submenu-type:slideOver, $mobile-breakpoint:$tablet-width) {
+
+  #{$selector} {
+    margin:0;
+    padding:0;
+    list-style: none;
+
+    .close{
+      color: #999;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 0px;
+      line-height: 0;
+      width: 50px;
+      height: 50px;
+      display: none;
+      border: 0;
+      font-size: 30px;
+      background: transparent;
+    }
+
+    //======================================================================
+    // MAIN STUFF
+    //======================================================================
+
+    @include tablet {
+      //main menu
+      //-----------------------
+      @if $type == basic {
+        @include basic-menu(horizontal);
+      }
+
+      //submenu's
+      //-----------------------
+      @if $submenu-type == dropdown {
+        @include submenu-dropdown();
+      }
+
+      @if $submenu-type == widefat {
+        @include submenu-widefat();
+      }
+
+    }
+    //======================================================================
+    // MOBILE STUFF
+    //======================================================================
+
+
+    @media (max-width:$mobile-breakpoint ){
+      //main menu
+      //-----------------------
+      @if $type-mobile == slideIn {
+        @include mobile-menu-slideIn();
+      }
+
+      @if $type-mobile == fadeIn {
+        @include mobile-menu-fadeIn();
+      }
+
+      //submenu's
+      //-----------------------
+      @if $mobile-submenu-type == slideOver {
+        @include mobile-submenu-slideOver();
+      }
+    }
+  }
+}
+

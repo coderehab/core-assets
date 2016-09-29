@@ -1,0 +1,11 @@
+@import "settings";
+@import "mixins";
+@import "predefine";
+@import "style"; // Eigen invulling
+@import "responsive";
+
+///@include wp-core-menu(horizontal, fadeIn);
+
+header button.toggle-menu-button {
+  float:right;
+}

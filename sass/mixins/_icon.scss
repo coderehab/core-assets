@@ -1,0 +1,9 @@
+@mixin icon($icon: "\f00d", $fontsize: 16px) {
+  content: $icon;
+  font-family: "FontAwesome";
+  display: block;
+  font-size: $fontsize;
+  height: 30px;
+  width: 30px;
+  color: black;
+}

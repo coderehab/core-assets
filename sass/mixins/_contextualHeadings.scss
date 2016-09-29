@@ -1,0 +1,9 @@
+@mixin heading-size($size) {
+	$new_size: $size * $amplifier-heading;
+
+	@if $new_size < $min-font-size {
+		$new_size: $new_size * 1;
+	}
+
+	font-size: $new_size + em;
+}

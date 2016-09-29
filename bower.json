@@ -1,0 +1,19 @@
+{
+  "name": "coderehab-assets",
+  "authors": [
+    "Code.Rehab"
+  ],
+  "description": "startingpoint for front-end projects",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "version": "0.0.1",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
