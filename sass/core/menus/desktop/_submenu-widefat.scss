@@ -10,7 +10,7 @@
 		position: absolute;
 		z-index: 99;
 		background: #fff;
-		@include single-transition(all, 0.3s);
+		transition: all 0.3s;
 		border: 1px solid #dfdfdf;
 		padding: 25px;
 		box-sizing: border-box;

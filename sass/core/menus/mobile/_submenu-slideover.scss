@@ -8,8 +8,8 @@
     bottom:0;
     padding:30px;
     background: $color2;
-    @include translateX(-100%);
-    @include single-transition(all, 0.3s);
+    transform: translateX(-100%);
+    transition: all 0.3s;
     overflow: auto;
 
     .sub-menu{display: none;}
@@ -28,10 +28,8 @@
     }
 
     &.visible{
-      @include translateX(0%);
+      transform: translateX(0%);
     }
   }
 
 }
-
-

@@ -1,6 +1,6 @@
 // mixins
 @mixin desktop {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+  @media (min-width: #{$desktop-width}){
     @content;
 }
 }
