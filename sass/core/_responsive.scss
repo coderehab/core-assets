@@ -1,3 +1,98 @@
 // @import 'responsive/desktop';
 // @import 'responsive/tablet';
 // @import 'responsive/mobile';
+$max-page-width: 960px;
+$screen-size-mobile: 0px;
+$screen-size-tablet: 768px;
+$screen-size-tablet-landscape: 1020px;
+$screen-size-desktop: 1280px;
+$screen-size-bigscreen: 1500px;
+
+//Mobile
+$mobile-width: 0px;
+
+//Tablet
+$tablet-width: 768px;
+$tablet-landscape-width: 1020px;
+
+//Desktop
+$desktop-width: 1280px;
+$bigscreen-width: 1601px;
+
+@mixin mobile-only {
+  @media (max-width:425px){
+    @content;
+  }
+}
+
+@mixin mobile-w320 {
+  @media (min-width:320px){
+    @content;
+  }
+}
+
+@mixin mobile-w375 {
+  @media (min-width:375px){
+    @content;
+  }
+}
+
+@mixin mobile-w425 {
+  @media (min-width:425px){
+    @content;
+  }
+}
+
+@mixin tablet-w768 {
+  @media (min-width: 768px){
+    @content;
+  }
+}
+
+@mixin laptop-w1024 {
+  @media (min-width: 1024px){
+    @content;
+  }
+}
+
+@mixin laptop-w1280{
+  @media (min-width: 1280px){
+    @content;
+  }
+}
+
+@mixin desktop-w1440{
+  @media (min-width: 1440px){
+    @content;
+  }
+}
+
+@mixin desktop-w1600{
+  @media (min-width: 1600px){
+    @content;
+  }
+}
+
+@mixin desktop-w1920{
+  @media (min-width: 1920px){
+    @content;
+  }
+}
+
+@mixin laptop-h800 {
+  @media (min-width: #{$screen-size-desktop}) and (min-height: 680px){
+    @content;
+  }
+}
+
+@mixin laptop-h900 {
+  @media (min-width: #{$screen-size-desktop}) and (min-height: 780px){
+    @content;
+  }
+}
+
+@mixin desktop-h1080 {
+  @media (min-width: #{$screen-size-desktop}) and (min-height: 960px){
+    @content;
+  }
+}
