@@ -20,7 +20,7 @@ $desktop-width: 1280px;
 $bigscreen-width: 1601px;
 
 @mixin mobile-only {
-  @media (max-width:425px){
+  @media (max-width:768px){
     @content;
   }
 }
